@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');
+
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+.cl-blue {
+    background-color: #2294d6;
+}
+
+.cl-red {
+    background-color: red;
+}
+
+
+body {
+    display: grid;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.header-logo{
+    padding: 0 50px;
+    line-height: 58px;
+
+}
+
+.header-logo__image {
+    width: 150px
+}
+
+.nav{
+
+}
+.nav-list-center{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 16px;
+}
+.nav-item{
+    position: relative;
+    font-weight: 600;
+}
+
+.nav-item__notify{
+    display: inline-block; 
+    position: absolute;
+    top: 0;
+    left: -30px;
+    /* background-color: red; */
+    line-height: 15px;
+    padding: 0px 4px;
+    border-radius: 9px;
+    color: white;
+    font-size: 9px;
+}
+.nav-item__notify--hot{
+    
+}
+
+.nav-item__notify--new{
+}
+
+.header-right{
+
+}
+.nav-list-right{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    list-style: none;
+    align-content: baseline;
+    float: right;
+    padding: 16px 50px;
+}
+
+.nav-list-right li i {
+    margin-right: 1px;
+}
+
+.nav-item-r{
+    position: relative;
+}
+
+.total-cart {
+    position: absolute;
+    top: -8px;
+    right: 3px;
+    background-color: black;
+    width: 15px;
+    text-align: center;
+    height: 15px;
+    border-radius: 50%;
+    line-height: 12px;
+}
+
+.total-cart__number{
+    color: white;
+    font-size: 12px;
+}
+
+/* DROP MENU */
+.dropmenu {
+    display: grid;
+    position: absolute;
+    width: auto;
+    padding: 28px;
+    height: auto;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+
+.menu-item{
+    width: 165px;
+}
+.menu-item__title{
+    font-size: 12px;
+}
+.menu-item__list{
+    list-style: none;
+    margin-top: 12px;
+}
+.menu-item__link{
+    margin-bottom: 6px;
+}
+.menu-item__link-item{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100;
+    color: black;
+}
+
+.separate {
+    background-color: black;
+    height: 2px;
+    width: 53px;
+    border-radius: 5px;
+}
