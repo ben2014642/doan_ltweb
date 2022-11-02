@@ -1,9 +1,11 @@
 @font-face {
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcg72j00.woff2) ;
     font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');
 
+}
+
+body {
+    font-family: 'Ubuntu';
 }
 
 * {
@@ -506,4 +508,182 @@ footer {
     background-color: transparent;
     letter-spacing: 1px;
 
+}
+
+/* CSS LOGIN */
+.wrap-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-title {
+    margin: 28px 0;
+}
+
+.login{
+
+}
+.login__account{
+
+}
+.login__wrap-input{
+
+}
+.login__account > a {
+    color: #c5c4c4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login__input{
+    width: 365px;
+    padding: 17px 20px;
+    border: 1px solid #ced4da;
+    margin-bottom: 12px;
+}
+.login__account-btn{
+
+}
+
+.login__account-btn > button {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+    margin: 21px 0;       
+}
+
+.login__box-register{
+    font-size: 13px;
+    display: flex;
+    background: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 23px;
+
+}
+.login__box-register > p{
+    margin-right: 10px;
+
+
+}
+.login__box-register > a{
+    color: #c5c4c4;
+    text-decoration: none;
+}
+
+.login__box-register > a:hover {
+    color: #fdbb2d;
+}
+
+/* CSS PRODUCT */
+.product-info {
+    display: flex;
+}
+
+.product-info__img{
+    width: 50%;
+}
+.product-info__right{
+    padding: 0 60px;
+}
+.product-info__rate{
+    display: flex;
+    margin-bottom: 5px;
+}
+.product-info__star{
+    color: #f2b03d;
+    margin-right: 8px;
+} 
+.product-info__text{
+    
+}
+.product-info__intro{
+    margin: 23px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.product-info__intro-title{
+    font-weight: 500;
+}
+.product-info__intro-price{
+    font-size: 20px;
+    margin: 18px 0;
+}
+.product-info__descript{
+
+}
+.product-info__descript-text{
+    color: #a8a8a8;
+    font-size: 14px;
+    line-height: 28px;
+}
+.product-info__action{
+    display: flex;
+    display: flex;
+    margin: 15px 0;
+}
+.product-info__add{
+    background-color: black;
+    color: white;
+    padding: 15px 55px;
+    font-weight: 600;
+    margin-right: 13px;
+}
+.product-info__quantity{
+    display: flex;
+    align-items: center;
+    width: 60px; 
+    height: 50px;
+    border: 2px solid black;
+}
+.product-info__quantity-number {
+    font-size: 27px;
+    margin-left: 25%;
+}
+.product-info__volume{
+    display: flex;
+    flex-direction: column;
+}
+.fa-caret-down{
+
+}
+.product-info__wishlist{
+    display: flex;
+    margin: 21px 0;
+    align-items: center;
+}
+.product-info__wishlist > i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+.product-info__wishlist > span {
+    font-weight: 700;
+    font-size: 14px;
+}
+.product-info__list{
+    list-style: none;
+}
+.product-info__item{
+    margin: 15px 0;
+}
+.product-info__item-product{
+
+}
+.product-info__item-product > span,
+.product-info__item-social > span {
+    font-weight: 600;
+    font-size: 14px;
+}
+.product-info__item-link{
+    text-decoration: none;
+    color: #bfbfbf;
+}
+.product-info__item-social{
+    display: flex;
+}
+.product-info__item-social-icon {
+
+}
+.product-info__item-social-icon > a {
+    margin: 0 10px;
 }
