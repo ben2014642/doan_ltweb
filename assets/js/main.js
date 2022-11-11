@@ -1,20 +1,17 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: { 
-    },
-  });
+window.onload = function () {
+  myCart = JSON.parse(window.localStorage.getItem('myCart'))
+  console.log(myCart);
+  if (myCart) {
+    showNoti(myCart);
+  }
+}
+
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $(".header").addClass("active");
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $(".header").removeClass("active");
+  }
+});
