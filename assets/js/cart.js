@@ -3,6 +3,8 @@ var containCart = document.querySelector(".contain-cart");
 var boxTotal = document.querySelector(".section-total");
 let data = '';
 var totalPrice = 0;
+
+
 if (getProducts) {
     getProducts.forEach(pr => {
         let totalOneProduct = pr.price * pr.quantity

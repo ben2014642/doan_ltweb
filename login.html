@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css"
-            href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-        <title>Đăng Nhập</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Đăng Nhập</title>
+</head>
+
 <body>
     <header class="header">
+        <div class="rp-navbar">
+            <i class="rp-navbar__icon fa-solid fa-bars"></i>
+        </div>
         <div class="header-logo">
             <a class="header-logo__link" href="/">
                 <img class="header-logo__image"
@@ -99,13 +107,14 @@
         <div class="header-right">
             <ul class="nav-list-right">
                 <li class="nav-item nav-item-r">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Search anything" type="search" name="search" class="search">
+                    <i class="fa-solid btn-search fa-magnifying-glass"></i>
                 </li>
                 <li class="nav-item nav-item-r">
-                    <i class="fa-regular fa-user"></i>
+                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
                 </li>
                 <li class="nav-item nav-item-r">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     <div class="total-cart">
                         <span class="total-cart__number">3</span>
                     </div>
@@ -119,10 +128,10 @@
             <section class="login">
                 <div class="login__account">
                     <div class="login__wrap-input">
-                        <input type="text" placeholder="Email address" class="login__input">
+                        <input type="text" placeholder="Email address" class="login__input ">
                     </div>
                     <div class="login__wrap-input">
-                        <input type="text" placeholder="Password" class="login__input">
+                        <input type="text" placeholder="Password" class="login__input ">
                     </div>
                     <a href="#">Forgot your password?</a>
                 </div>
@@ -176,8 +185,11 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
     <script src="assets/js/common.js"></script>
     <script src="assets/js/account.js"></script>
 </body>

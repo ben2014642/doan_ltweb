@@ -7,11 +7,21 @@ window.onload = function () {
 }
 
 
-$(window).on("scroll", function () {
-  if ($(window).scrollTop() > 50) {
-    $(".header").addClass("active");
-  } else {
-    //remove the background property so it comes transparent again (defined in your css)
-    $(".header").removeClass("active");
+document.querySelector(".rp-navbar").onclick = function () {
+  console.log('1');
+  let a = `
+  <div class="menu-mobile">
+    <div class="menu-mobile__list">
+      
+    </div>
+  </div> `;
+  document.body.style.position = "relative";
+  document.body.insertAdjacentHTML("afterbegin",a);
+}
+
+window.onclick = function (e) {
+  modal = document.querySelector(".menu-mobile");
+  if (e.target == modal) {
+    modal.style.display = "none";
   }
-});
+}
