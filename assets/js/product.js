@@ -10,6 +10,8 @@ const products = [
 ]
 
 var queryDict = [];
+
+// Stackoverflow
 location.search.substr(1).split("&").forEach(item => {
   let a = item.split("=")[1];
   queryDict.push(a);
@@ -73,27 +75,12 @@ document.querySelector(".product-info__add").onclick = function () {
       img: products[idProduct - 1].img,
     }
     myCart.push(product);
-    console.log(myCart);
-    console.log('else');
   }
   window.localStorage.setItem('myCart', JSON.stringify(myCart));
   showNoti(myCart);
   alert("Thêm sản phẩm thành công !")
 }
 
-//Them san pham moi vao Localstorage
-function pushArray(myCart) {
-  let product = {
-    id: idProduct,
-    name: products[idProduct - 1].name,
-    quantity: 1,
-    price: products[idProduct - 1].price,
-    img: products[idProduct - 1].img,
-  }
-  myCart.push(product);
-  console.log(myCart);
-  console.log('else');
-}
 // tang giam so luong san pham
 
 document.querySelector(".increase").onclick = function () {
@@ -136,7 +123,6 @@ function showNoti(myCart) {
   let n = getToTalProduct(myCart);
   document.querySelector(".total-cart__number").textContent = n;
 }
-
 
 
 window.onload = function () {

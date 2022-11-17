@@ -122,7 +122,8 @@ body {
     font-size: 22px;
 }
 
-.nav-item>a {
+.nav-item > a {
+    text-decoration: none;
     color: black;
 }
 
@@ -134,9 +135,12 @@ body {
     /* width: 273px; */
     border-radius: 8px;
     outline: none;
+    border: 1px solid rgb(205, 205, 205);
+    margin-right: 12px;
 }
 
 .search.showSearch {
+    
     animation: startSearch 0.5s ease-in-out;
     width: 273px;
 }
@@ -902,6 +906,10 @@ table {
     color: red;
 }
 
+.cart-total-m {
+    display: none;
+}
+
 /* CSS RESPONSIVE */
 @media only screen and (max-width: 600px) {
 
@@ -1102,5 +1110,7 @@ table {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
-
+    .cart-total-m {
+        display: block;
+    } 
 }

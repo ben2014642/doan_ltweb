@@ -36,20 +36,25 @@ $(window).on("scroll", function () {
 var btnSearch = document.querySelector(".btn-search");
 btnSearch.onclick = function (e) {
     var inputSearch = document.querySelector(".search");
-    if (inputSearch.classList.contains('showSearch')) {
+    let isShow = inputSearch.classList.contains("showSearch");
+    if (isShow) {
+        console.log('if');
         inputSearch.classList.add('endSearch');
         inputSearch.classList.remove('showSearch');
-        console.log(inputSearch.offsetWidth);
-        inputSearch.addEventListener("animationend", function() {
-            inputSearch.style.display = 'none';
-            
-        }, false);
+        inputSearch.addEventListener("animationend", function () {
+            if (isShow) {
+                inputSearch.style.display = 'none';
+                btnSearch.classList.replace("fa-xmark", "fa-magnifying-glass");
+
+            }
+            isShow = false;
+        });
     } else {
-        console.log(inputSearch.offsetWidth);
         inputSearch.classList.add('showSearch');
         inputSearch.classList.remove('endSearch');
         inputSearch.style.display = 'block';
-        
-
+        btnSearch.classList.replace("fa-magnifying-glass", "fa-xmark");
+        isShow = true;
     }
 }
+

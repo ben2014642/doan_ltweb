@@ -18,7 +18,10 @@ if (getProducts) {
     
                 </div>
             </td>
-            <td>$${pr.price}.00</td>
+            <td class="cart-line-2">
+                <p class="cart-price-m" >Price: </p>
+                <span class="cart-total-m" >$${pr.price}.00</span>
+            </td>
             <td>
                 <div class="product-info__quantity">
                     <span class="product-info__quantity-number number-${pr.id}">${pr.quantity}</span>
@@ -130,3 +133,4 @@ function getProductCurrent(idProduct) {
 }
 
 // showNoti(getProducts)
+
