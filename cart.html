@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
-
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -16,9 +14,100 @@
         href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Giỏ Hàng</title>
+
 </head>
 
 <body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__content">
+            <div class="menu-mobile__head">
+                <div class="menu-mobile__head-item menu-mobile__l">
+                    <i class="fa-solid fa-list"></i>
+                    <span>MENU</span>
+                </div>
+                <div class="menu-mobile__head-item menu-mobile__r">
+                    <i class="fa-regular fa-user"></i>
+                    <span><a href="login.html">LOGIN</a></span>
+
+                </div>
+                <div class="close-modal">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="menu-mobile__body">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">HOME <i class="fa-solid fa-angle-right"></i></li>
+                    <li class="menu-mobile__item">SHOP <i class="fa-solid fa-angle-right"></i></li>
+                    <li class="menu-mobile__item item-featured">
+                        FEATURED  <i class="fa-solid fa-angle-right"></i>
+                        <div class="dropmenu-m">
+                            <div class="menu-item">
+                                <h5 class="menu-item__title">BLOG LAYOUTS</h5>
+                                <div class="separate"></div>
+                                <ul class="menu-item__list">
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Standar Sidebar Left</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Standar Sidebar Right</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Grid Sidebar LeftNEW</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Grid No SidebarNEW</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <h5 class="menu-item__title">PRODUCT LAYOUTS</h5>
+                                <div class="separate"></div>
+                                <ul class="menu-item__list">
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product Large ImagesNEW</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product Extended</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product Gallery</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product StickyHOT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <h5 class="menu-item__title">PRODUCT TYPES</h5>
+                                <div class="separate"></div>
+                                <ul class="menu-item__list">
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Variable</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Video</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Affiliate</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Simple</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="arrow-up"></div>
+                        </div>
+                    </li>
+                    <li class="menu-mobile__item">PAGES <i class="fa-solid fa-angle-right"></i></li>
+                    <li class="menu-mobile__item">ELEMENT </li>
+                </ul>
+            </div>
+            <!-- <div class="menu-mobile__footer">
+                
+                <span>CLOSE</span>
+            </div> -->
+        </div>
+    </div>
     <header class="header">
         <div class="rp-navbar">
             <i class="rp-navbar__icon fa-solid fa-bars"></i>
@@ -132,29 +221,12 @@
                             <th>PRICE</th>
                             <th>QUANTITY</th>
                             <th>TOTAL</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody class="contain-cart">
                         <tr>
-                            <td colspan="2">
-                                <div class="cart">
-                                    <img src="https://cdn.shopify.com/s/files/1/0324/2334/6235/products/7.1_68a40c73-2286-4166-b0af-613f54c30d61_small.jpg?v=1582776603"
-                                        alt="" class="cart-info__img">
-                                    <h3 class="cart-info__name">Wet Cat Food</h3>
-
-                                </div>
-                            </td>
-                            <td>$46.00</td>
-                            <td>
-                                <div class="product-info__quantity">
-                                    <span class="product-info__quantity-number">1</span>
-                                    <div class="product-info__volume">
-                                        <i class="fa-solid fa-caret-up increase"></i>
-                                        <i class="fa-solid fa-caret-down decrease"></i>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>$46.00</td>
+                            <td colspan="5" class="no-product">There are no products available</td>
                         </tr>
                     </tbody>
                 </table>
@@ -165,8 +237,9 @@
                     <div class="section-total__middle">
                         <h3 class="section-total__label">Total</h3>
                         <hr>
-                        <h3 class="section-total__amount">$46.00</h3>
+                        <h3 class="section-total__amount">$.00</h3>
                     </div>
+                    <button class="paymentBtn">Thanh Toán</button>
                 </div>
             </section>
         </article>
@@ -215,6 +288,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <script src="assets/js/common.js"></script>
+    <!-- <script src="assets/js/cart.js"></script> -->
     <script src="assets/js/cart.js"></script>
 </body>
 

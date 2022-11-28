@@ -20,8 +20,98 @@
 </head>
 
 <body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__content">
+            <div class="menu-mobile__head">
+                <div class="menu-mobile__head-item menu-mobile__l">
+                    <i class="fa-solid fa-list"></i>
+                    <span>MENU</span>
+                </div>
+                <div class="menu-mobile__head-item menu-mobile__r">
+                    <i class="fa-regular fa-user"></i>
+                    <span><a href="login.html">LOGIN</a></span>
+
+                </div>
+                <div class="close-modal">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="menu-mobile__body">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">HOME <i class="fa-solid fa-angle-right"></i></li>
+                    <li class="menu-mobile__item">SHOP <i class="fa-solid fa-angle-right"></i></li>
+                    <li class="menu-mobile__item item-featured">
+                        FEATURED  <i class="fa-solid fa-angle-right"></i>
+                        <div class="dropmenu-m">
+                            <div class="menu-item">
+                                <h5 class="menu-item__title">BLOG LAYOUTS</h5>
+                                <div class="separate"></div>
+                                <ul class="menu-item__list">
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Standar Sidebar Left</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Standar Sidebar Right</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Grid Sidebar LeftNEW</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Blog Grid No SidebarNEW</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <h5 class="menu-item__title">PRODUCT LAYOUTS</h5>
+                                <div class="separate"></div>
+                                <ul class="menu-item__list">
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product Large ImagesNEW</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product Extended</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product Gallery</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Product StickyHOT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item">
+                                <h5 class="menu-item__title">PRODUCT TYPES</h5>
+                                <div class="separate"></div>
+                                <ul class="menu-item__list">
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Variable</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Video</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Affiliate</a>
+                                    </li>
+                                    <li class="menu-item__link">
+                                        <a href="" class="menu-item__link-item">Simple</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="arrow-up"></div>
+                        </div>
+                    </li>
+                    <li class="menu-mobile__item">PAGES <i class="fa-solid fa-angle-right"></i></li>
+                    <li class="menu-mobile__item">ELEMENT </li>
+                </ul>
+            </div>
+            <!-- <div class="menu-mobile__footer">
+                
+                <span>CLOSE</span>
+            </div> -->
+        </div>
+    </div>
     <header class="header">
-        
+
         <div class="rp-navbar">
             <i class="rp-navbar__icon fa-solid fa-bars"></i>
         </div>
@@ -128,7 +218,8 @@
     <main>
         <article>
             <section class="section banner">
-                <img class="banner-img" src="https://cdn.shopify.com/s/files/1/0324/2334/6235/files/slide1.3.jpg?v=1613757500" alt="">
+                <img class="banner-img"
+                    src="https://cdn.shopify.com/s/files/1/0324/2334/6235/files/slide1.3.jpg?v=1613757500" alt="">
                 <div class="banner-content">
                     <div class="banner-wrap">
                         <h1 class="banner__title">Famipet Shop</h1>
@@ -138,10 +229,10 @@
                 </div>
             </section>
 
-            <section class="section product">
+            <section class="section product" id="products">
                 <h1 class="heading-section product__title">New Arrivals</h1>
                 <div class="product-list">
-                    <a href="product.html?item=1" id="item-1"  class="product-item">
+                    <a href="product.html?item=1" id="item-1" class="product-item">
                         <img src="assets/img/product/1.png" class="product-item__img" alt="">
                         <div class="product-item__info">
                             <h3 class="product-name">Royal Canin Maxi 5+</h3>
@@ -231,7 +322,7 @@
                             <!-- <li class="promotion-countdown__item"></li> -->
                         </ul>
                     </div>
-                    <button class="promotion-content__button">SHOP NOW</button>
+                    <button class="promotion-content__button"><a href="#products">SHOP NOW</a></button>
                 </div>
             </section>
 
@@ -297,9 +388,10 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
